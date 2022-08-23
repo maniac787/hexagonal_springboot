@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Primary
 public class MongoUserRepository implements UserRepository {
 
-  private SpringDataMongoUserRepository springDataMongoUserRepository;
+  private final SpringDataMongoUserRepository springDataMongoUserRepository;
 
   @Autowired
   public MongoUserRepository(SpringDataMongoUserRepository springDataMongoUserRepository){

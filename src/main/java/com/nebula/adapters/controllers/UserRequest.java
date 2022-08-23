@@ -7,7 +7,7 @@ import com.nebula.core.domain.User;
 
 public class UserRequest {
 
-  private User user;
+  private final User user;
 
   @JsonCreator
   public UserRequest(@JsonProperty("user") User user) {

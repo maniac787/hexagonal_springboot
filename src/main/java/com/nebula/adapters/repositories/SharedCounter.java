@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class SharedCounter {
   private int count = 0;
-  private Semaphore sem;
+  private final Semaphore sem;
   private static SharedCounter instance;
 
 
